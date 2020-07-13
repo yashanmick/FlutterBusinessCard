@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(MyApp());
+}
+
+//for create a stateless widget simply type "stless"
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: Container(),
       ),
-    ),
-  );
+    );
+  }
 }
