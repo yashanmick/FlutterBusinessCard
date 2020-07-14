@@ -21,12 +21,13 @@ class MyApp extends StatelessWidget {
                 backgroundImage: AssetImage('images/me.jpg'),
               ),
               Text(
-                'YashanMick',
+                'Yashan Mick',
                 style: TextStyle(
-                    fontSize: 40.0,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.italic),
+                  fontFamily: 'Pacifico',
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ],
           ),
