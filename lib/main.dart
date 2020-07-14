@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
+             mainAxisAlignment: MainAxisAlignment.center,
+             //crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -35,28 +35,59 @@ class MyApp extends StatelessWidget {
               Text(
                 'Flutter Developer',
                 style: TextStyle(
-                  fontFamily: 'SourceSansPro',
-                  fontSize: 20.0,
-                  color: Colors.teal.shade100,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 2.5
+                    fontFamily: 'SourceSansPro',
+                    fontSize: 20.0,
+                    color: Colors.teal.shade100,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2.5),
+              ),
+              SizedBox(height: 20.0),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 50.0,
+                    ),
+                    Text(
+                      '+94 000 000 000',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSansPro',
+                      ),
+                    ),
+                  ],
                 ),
               ),
               SizedBox(height: 20.0),
               Container(
-                alignment: Alignment.center,
-                height: 60.0,
-                width: 250,
                 color: Colors.white,
-                child: Text('+94 000 000 000'),
-              ),
-              SizedBox(height: 20.0),
-              Container(
-                alignment: Alignment.center,
-                height: 60.0,
-                width: 250,
-                color: Colors.white,
-                child: Text('yashanmick@gmail.com'),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 50.0,
+                    ),
+                    Text(
+                      'yashanmick@gail.com',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSansPro',
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
